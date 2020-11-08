@@ -64,35 +64,60 @@ section {
 }
 
 /* Cards */
+
+.main__cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.main__card {
+    padding: 5%;
+}
 .main__card--blue .card__top {
     background-color: rgb(0,123,255);
     border-radius: 0.25em 0.25em 0 0;
+    border: 1px solid rgb(1, 107, 219);
+    padding: 10%;
 }
 .main__card--blue .card__bottom {
     background-color: rgb(0,123,255);
     border-radius: 0 0 0.25em 0.25em;
+    border: 1px solid rgb(1, 107, 219);
+    padding: 10%;
 }
 .main__card--yellow .card__top {
     background-color: rgb(255,193,7);
     border-radius: 0.25em 0.25em 0 0;
+    border: 1px solid rgba(219, 166, 7);
+    padding: 10%;
 }
 .main__card--yellow .card__bottom {
     background-color: rgb(255,193,7);
     border-radius: 0 0 0.25em 0.25em;
+    border: 1px solid rgba(219, 166, 7);
+    padding: 10%;
 }
 .main__card--green .card__top {
     background-color: rgb(40,167,69);
     border-radius: 0.25em 0.25em 0 0;
+    border: 1px solid rgb(29, 117, 49);
+    padding: 10%;
 }
 .main__card--green .card__bottom {
     background-color: rgb(40,167,69);
     border-radius: 0 0 0.25em 0.25em;
+    border: 1px solid rgb(29, 117, 49);
+    padding: 10%;
 }
 .main__card--red .card__top {
     background-color: rgb(220,53,69);
     border-radius: 0.25em 0.25em 0 0;
+    border: 1px solid rgb(192, 48, 62);
+    padding: 10%;
 }
 .main__card--red .card__bottom {
     background-color: rgb(220,53,69);
     border-radius: 0 0 0.25em 0.25em;
+    border: 1px solid rgb(192, 48, 62);
+    padding: 10%;
 }
