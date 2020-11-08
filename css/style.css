@@ -25,12 +25,20 @@
 }
 
 .search__input:focus {
-    border-color: rgb(128,189,255);
+    animation: search__input 0.15s 1;
 }
 
 .search__btn {
     background-color: rgb(0,123,255);
     text-align: center;
+}
+
+@keyframes search__input:focus {
+    0% { }
+    50% {
+        border-color: rgb(128,189,255);
+    }
+    100 { border-color: rgb(128,189,255); }
 }
 
 /* Nav */
@@ -46,10 +54,29 @@
     left: 0;
     overflow-x: hidden;
     padding-top: 20px;
+    text-align: justify;
+}
+
+.nav__ul li{
+    padding: 1em 1em 1em 1em;
+    font-size: 1.2em;
+    display: block;
+}
+
+.nav__ul li a {
+    padding-left: 5%;
+    color: rgb(233,236,239);
 }
 
 .nav__ul:focus {
     color: rgb(236,236,236);
+}
+
+/* Cards */
+
+h1 {
+    font-size: 1.2;
+    font-weight: bold;
 }
 
 .main__breadcrumb {
@@ -57,13 +84,12 @@
     border-radius: 0.25em;
     padding-bottom: 1em;
     padding-left: 1.5em;
+    padding-top: 1em;
 }
 
 section {
     margin-left: 20%;
 }
-
-/* Cards */
 
 .main__cards {
     display: grid;
@@ -72,12 +98,14 @@ section {
 
 .main__card {
     padding: 5%;
+    color: white;
 }
 .main__card--blue .card__top {
     background-color: rgb(0,123,255);
     border-radius: 0.25em 0.25em 0 0;
     border: 1px solid rgb(1, 107, 219);
     padding: 10%;
+    font-size: 1.2em;
 }
 .main__card--blue .card__bottom {
     background-color: rgb(0,123,255);
@@ -90,6 +118,7 @@ section {
     border-radius: 0.25em 0.25em 0 0;
     border: 1px solid rgba(219, 166, 7);
     padding: 10%;
+    font-size: 1.2em;
 }
 .main__card--yellow .card__bottom {
     background-color: rgb(255,193,7);
@@ -102,6 +131,7 @@ section {
     border-radius: 0.25em 0.25em 0 0;
     border: 1px solid rgb(29, 117, 49);
     padding: 10%;
+    font-size: 1.2em;
 }
 .main__card--green .card__bottom {
     background-color: rgb(40,167,69);
@@ -114,6 +144,7 @@ section {
     border-radius: 0.25em 0.25em 0 0;
     border: 1px solid rgb(192, 48, 62);
     padding: 10%;
+    font-size: 1.2em;
 }
 .main__card--red .card__bottom {
     background-color: rgb(220,53,69);
